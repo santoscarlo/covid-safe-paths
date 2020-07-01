@@ -20,9 +20,8 @@ const NextSteps = (): JSX.Element => {
     navigation.goBack();
   };
 
-  const headerText = t('exposure_history.next_steps.ha_self_assessment', {
-    healthAuthorityName,
-  });
+  const headerText =
+    'The State of Minnesota recommends you take a self-assessment';
   const contentTextOne = t(
     'exposure_history.next_steps.possible_crossed_paths',
   );
