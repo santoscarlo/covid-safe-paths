@@ -9,7 +9,7 @@ import {
 } from './content';
 
 const gpsStrategy: TracingStrategy = {
-  name: 'bt',
+  name: 'gps',
   exposureInfoSubscription: subscribeToExposureEvents,
   permissionsProvider: PermissionsProvider,
   homeScreenComponent: Home,

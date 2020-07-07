@@ -15,6 +15,12 @@ final class ExposureManager: NSObject {
   
   var detectingExposures = false
 
+  @objc func getLastDetectionDate(callback: @escaping RCTResponseSenderBlock) {
+    let lastDetectionDate = "12-22-2020"
+    // let lastDetectionDate = BTSecureStorage.shared.$dateLastPerformedExposureDetection.wrappedValue
+    callback([[lastDetectionDate]])
+  }
+
   var detectionPermitted: Bool {
     if let lastDetectionDate = BTSecureStorage.shared.$dateLastPerformedExposureDetection.wrappedValue,
       Calendar.current.dateComponents([.hour], from: lastDetectionDate, to: Date()).hour ?? 0 < 3 {
