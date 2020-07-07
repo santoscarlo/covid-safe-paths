@@ -1,7 +1,7 @@
 /* eslint-disable */
 const screenshotText = 'Onboarding - Page 3';
 
-class NotificatioNDetails {
+class NotificationDetails {
   async tapButton(languageStrings) {
     await element(by.label(languageStrings.label.launch_next)).tap();
   }
@@ -18,4 +18,4 @@ class NotificatioNDetails {
   }
 }
 
-export default new NotificatioNDetails();
+export default new NotificationDetails();
